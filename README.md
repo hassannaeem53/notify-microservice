@@ -166,7 +166,7 @@ Replace the placeholders (e.g., your_frontend_base_url, your_secret_key, your_mo
 
 ## Let's Discuss Ideas
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hassannaeem53@gmail.com)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://[www.linkedin.com/](https://www.linkedin.com/in/hassan-naeem-357001192/)) 
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://[www.linkedin.com/in/hassan-naeem-357001192/)
 
 
 
