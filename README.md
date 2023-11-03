@@ -119,20 +119,20 @@ Replace the placeholders (e.g., your_frontend_base_url, your_secret_key, your_mo
 
 
 ### Application
-```http
+```plaintext
   GET /api/applications
   POST /api/applications
   PATCH /api/applications/:id
   GET /api/applications/:id
 ```
 ### Event
-```http
+```plaintext
   GET /api/events
   POST /api/events
   PATCH /api/events/:id
 ```
 ### Notication
-```http
+```plaintext
   GET /api/notifications
   POST /api/notifications
   PATCH /api/notifications/:id
@@ -152,14 +152,15 @@ Replace the placeholders (e.g., your_frontend_base_url, your_secret_key, your_mo
 | `eventId` | `string/int` | **Required**. As Query param when requesting for Notiications |
 
 ### Others
-```http
+```plaintext
   GET /api/tags
   POST /api/auth
   PATCH /api/users
 ```
 
 
-
+## Class Diagram
+![Class Diagram](classdiagram.svg)
 
 
 
@@ -167,8 +168,5 @@ Replace the placeholders (e.g., your_frontend_base_url, your_secret_key, your_mo
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hassannaeem53@gmail.com)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/) 
 
-
-## Class Diagram
-![Class Diagram](classdiagram.svg)
 
 
