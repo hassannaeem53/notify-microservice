@@ -1,7 +1,7 @@
 
 # Notification Microservice
 
-The Notification Service Microservice is responsible for setting up event-based email notifications for applications within an organization. It allows administrators to configure notifications, manage applications, events, and notification types, and send messages to users based on various events. This readme provides an overview of the microservice's functionality, terminology, and user stories.
+The Notification Service Microservice is responsible for setting up event-based email notifications for applications within an organization. It allows administrators to configure notifications, manage applications, events, and notification types, and send messages to users based on various events. The development process also includes unit and integration testing of every major module. This readme provides an overview of the microservice's functionality, terminology, and user stories.
 
 ## Terminologies
 - **Application**: A product used by the organization.
