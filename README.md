@@ -160,7 +160,7 @@ Replace the placeholders (e.g., your_frontend_base_url, your_secret_key, your_mo
 
 
 ## Class Diagram
-![Class Diagram](classdiagram.svg)
+![Class Diagram](classdiag.svg)
 
 
 
