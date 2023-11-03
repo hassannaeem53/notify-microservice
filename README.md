@@ -165,8 +165,13 @@ Replace the placeholders (e.g., your_frontend_base_url, your_secret_key, your_mo
 
 
 ## Let's Discuss Ideas
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hassannaeem53@gmail.com)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://[www.linkedin.com/in/hassan-naeem-357001192/)
+<p align="left">
+  <a href="https://www.linkedin.com/in/hassan-naeem-357001192/"><img title="Follow on LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a target="_blank" href="https://Facebook.com/hassannaeem53"> <img alt="Facebook" src="https://img.shields.io/badge/Facebook-%231877F2.svg?&style=for-the-badge&logo=Facebook&logoColor=white"/>
+</a>
+  <a href="mailto:hassannaeem53@gmail.com"><img title="Email" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://www.instagram.com/hassannaeem53/"><img title="Follow on Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+</p>
 
 
 
