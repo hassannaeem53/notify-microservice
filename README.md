@@ -169,5 +169,6 @@ Replace the placeholders (e.g., your_frontend_base_url, your_secret_key, your_mo
 
 
 ## Class Diagram
-![Class Diagram](https://drive.google.com/file/d/1AXLUT5w7xkemJY9zX28sdJkh_homyC5Z/view?usp=sharing)
+![Class Diagram](class_diagram.svg)
+
 
