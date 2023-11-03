@@ -3,13 +3,13 @@
 
 The Notification Service Microservice is responsible for setting up event-based email notifications for applications within an organization. It allows administrators to configure notifications, manage applications, events, and notification types, and send messages to users based on various events. This readme provides an overview of the microservice's functionality, terminology, and user stories.
 
-## Terminology
-- Application: A product used by the organization.
-- Event: An operation in an application that triggers email notifications to users (e.g., assigning a training to an employee).
-- Notification Types: Different types of notifications triggered by an event (e.g., Trainee Notification, Manager Notification).
-- Template: A blueprint for creating email messages with placeholders for metadata.
-- Message: An email created using a template and sent to the user.
-- Metadata: Information used to fill placeholders in templates (e.g., course title, course code, username)
+## Terminologies
+- **Application**: A product used by the organization.
+- **Event**: An operation in an application that triggers email notifications to users (e.g., assigning a training to an employee).
+- **Notification**: Different types of notifications triggered by an event (e.g., Trainee Notification, Manager Notification).
+- **Template**: A blueprint for creating email messages with placeholders for metadata.
+- **Message**: An email created using a template and sent to the user.
+- **Metadata**: Information used to fill placeholders in templates (e.g., course title, course code, username)
 
 
 
@@ -33,7 +33,7 @@ The Notification Service Microservice is responsible for setting up event-based 
     - Deactivate Notifications to prevent sending message.
 - Message:
     - Add custom messages using metadeta and tags to the enduser's notifications.
-    - Suggesting Tags while writing notification message.
+    - Suggesting Tags while writing notification message. (Type **{{** to trigger suggestions)
 
 ## Installation
 
@@ -58,9 +58,116 @@ docker run -p 80:80 your-app-name
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variables to your environment and also create configuration files for both the submodules.
 
-`SECRET_KEY`
+#### Frontend
+
+For the frontend submodule, create a `.env` file in the `frontend` directory and add the following environment variable with your desired value:
+
+```plaintext
+VITE_BASE_URL=your_frontend_base_url
+```
+#### Backend
+For the backend submodule, you need to set the following environment variable:
+```plaintext
+SECRET_KEY=your_secret_key
+```
+
+In addition to environment variables, create configuration files for the submodules with the following placeholders:
+
+#### custom-environment-variables.json (For Backend)
+
+    {
+        "database": {
+            "postgresdb": {
+                "connection": {
+                    "password": "notify_postgres_password"
+                }
+            },
+            "SECRET_KEY": "your_secret_key",
+            "MONGO_DB_URL": "MONGO_DB_URL"
+        }
+    }
+
+#### development.json (For Backend)
+
+    {
+        "server": {
+            "port": 3000
+        },
+        "database": {
+            "dbName": "mongodb",
+            "postgresdb": {
+                "connection": {
+                    "database": "Notify",
+                    "user": "postgres"
+                }
+            },
+            "mongodb": {
+                "connectionString": "your_mongodb_connection_string"
+            }
+        }
+    }
+
+Replace the placeholders (e.g., your_frontend_base_url, your_secret_key, your_mongodb_connection_string) with your actual values.
 
 
+
+
+
+## API Reference
+
+
+### Application
+```http
+  GET /api/applications
+  POST /api/applications
+  PATCH /api/applications/:id
+  GET /api/applications/:id
+```
+### Event
+```http
+  GET /api/events
+  POST /api/events
+  PATCH /api/events/:id
+```
+### Notication
+```http
+  GET /api/notifications
+  POST /api/notifications
+  PATCH /api/notifications/:id
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `name` | `string` | **Optional**. Name of the Application/Event/Notication |
+| `Description` | `string` | **Optional**. Description of the Application/Event/Notication |
+| `isActive` | `boolean` | **Optional**.  Active status |
+| `created_at` | `string` | **Optional**. Creation date |
+| `sort` | `string` | **Optional**. Sort order |
+| `sortby` | `string` | **Optional**. Coloumn to sort|
+| `page` | `int` | **Optional**. Get a specific page number from a paginated response |
+| `limit` | `int` | **Optional**. Give a number of responses on a single page |
+| `applicationId` | `string/int` | **Required**. As Query param when requesting for Events |
+| `eventId` | `string/int` | **Required**. As Query param when requesting for Notiications |
+
+### Others
+```http
+  GET /api/tags
+  POST /api/auth
+  PATCH /api/users
+```
+
+
+
+
+
+
+## Let's Discuss Ideas
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hassannaeem53@gmail.com)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/) 
+
+
+## Class Diagram
+![Class Diagram](https://drive.google.com/file/d/1AXLUT5w7xkemJY9zX28sdJkh_homyC5Z/view?usp=sharing)
 
